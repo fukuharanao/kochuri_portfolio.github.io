@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Noto+Sans+JP:wght@500&display=swap');
+/*
+英語フォント
+font-family: 'Kanit', sans-serif;
+
+日本語フォント
+font-family: 'Noto Sans JP', sans-serif;
+*/
+
+/*文字*/
+/*日本語フォント*/
+p,
+.mail,
+.btn,
+h5,
+.freepik,
+footer {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #222222;
+}
+
+/*英語フォント*/
+h1,
+h2,
+a,
+button {
+    font-family: 'Kanit', sans-serif;
+    color: #222222;
+}
+
+h1 {
+    font-size: 200px;
+    color: rgba(0, 0, 0, .0);
+    -webkit-text-stroke: 2px #e62677;
+    text-stroke: 2px #e62677;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+.all{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #ececec;
+    width: 100%;
+    margin: 0;
+}
+
+article {
+    margin: 5% 8%;
+}
+
+/*ヘッダー*/
+
+header {
+    margin: 0px;
+}
+
+
+.logo h2 {
+    position: fixed;
+    left: 5%;
+    color: #ffffff;
+}
+
+
+.logo h2:hover {
+    color: #969696;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #969696;
+}
+
+
+nav {
+    position: fixed;
+    right: 3%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 0 30px;
+    list-style-type: none;
+}
+
+
+/*index top*/
+.top {
+    background: linear-gradient(#E62677, #ffaab9);
+    text-align: center;
+    height: 800px;
+    width: 100%;
+}
+
+.top img {
+    margin-top: 260px;
+}
+
+/*index about*/
+
+.index h5 {
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 20px 20px;
+}
+
+.index rt {
+    text-align: center;
+    font-size: 18px;
+}
+
+.about p {
+    margin: 20px 22px;
+    line-height: 30px;
+}
+
+.setumeiset {
+    display: flex;
+    margin: 2% 0 0 10%;
+    min-width: 900px;
+    width: 910px;
+}
+
+.setumei {
+    margin: 80px 0 0 100px;
+}
+
+.more {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.morecss {
+    font-size: 25px;
+    text-decoration: none;
+    color: #e62677;
+}
+
+
+.morecss:hover {
+    color: #969696;
+}
+
+.about img {
+    margin: 0;
+}
+
+
+
+.contact {
+    text-align: center;
+}
+
+
+.freepik {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #e62677;
+    margin: 10px 0;
+    padding-left: 82%;
+}
+
+.freepikp {
+    font-size: 12px;
+    color: #222222;
+}
+
+.freepik:hover {
+    color: #969696;
+}
+
+.workspiks {
+    margin: -50px 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: #e62677;
+    padding: 10px 0;
+}
+
+
+.mail {
+    box-shadow: inset 0 0 0 2px #e62677;
+    color: #e62677;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+    text-decoration: none;
+}
+
+.mail::before,
+.mail::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.mail::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.mail::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.mail:hover::before,
+.mail:hover::after {
+    border-color: #e62677;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.mail:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.mail:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 16px 20px 18px 20px;
+    letter-spacing: 0.05rem;
+    font-size: 26px;
+}
+
+.btn:focus {
+    outline: 2px dotted #e62677;
+}
+
+.contact p {
+    margin-bottom: 60px;
+}
+
+
+
+
+.workpik {
+    display: inline-block;
+}
+
+
+.workpik.hovermove {
+    position: relative;
+    transition: .6s cubic-bezier(0.33, 1, 0.68, 1);
+    width: 370px;
+    height: 282px;
+}
+
+.workpik.hovermove::before,
+.workpik.hovermove::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    margin: auto;
+    transition: .6s cubic-bezier(0.33, 1, 0.68, 1);
+    opacity: 0;
+}
+
+.workpik.hovermove::before {
+    background: rgba(0, 0, 0, .3);
+    width: 370px;
+    height: 282px;
+}
+
+.workpik.hovermove::after {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+}
+
+.workpik.hovermove:hover::before,
+.workpik.hovermove:hover::after {
+    opacity: 1;
+}
+
+.workpik.hovermove:hover::after {
+    letter-spacing: 0.1em;
+}
+
+.workpik.hovermove:hover {
+    transform: scale(0.9);
+}
+
+
+.workpik.hovermove.pik01::after {
+    content: "01　目指せ 都道府県博士";
+}
+
+.workpik.hovermove.pik02::after {
+    content: "02　St.ミート";
+}
+
+.workpik.hovermove.pik03::after {
+    content: "03　CUPCAKE KOCHURI";
+}
+
+.workpik.hovermove.pik04::after {
+    content: "04　遠隔授業ガイドライン";
+}
+
+.workpik.hovermove.pik05::after {
+    content: "05　情報メディア学科LPサイト";
+}
+
+.workpik.hovermove.pik06::after {
+    content: "06　Happy Valentine 2022";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
